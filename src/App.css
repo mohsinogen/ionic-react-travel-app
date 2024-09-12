@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.f-family-poppins {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.f-family-roboto {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.intro-swiper-pagination-bullets {
+  margin-top: -40px !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+  .intro-swiper-bullet {
+    display: block;
+    background: var(--ion-color-primary) !important;
+    height: 8px !important;
+    width: 10px !important;
+    border-radius: 10px !important;
+    margin: 0px 5px !important;
+}
+.intro-swiper-bullet-active {
+    border-radius: 10px !important;
+    background: var(--ion-color-primary) !important;
+    width: 30px !important;
+  }
+
+.input-box {
+  background: var(--ion-color-tertiary);
+  border-radius: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: medium;
+}
+
+ion-tab-bar {
+  left: 50%;
+  /* border-top-left-radius: 35px;
+    border-top-right-radius: 35px; */
+  height: 75px;
+  overflow: hidden;
+  box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-tab-button {
+  --background: var(--ion-color-primary);
+  --color: var(--ion-color-light);
+  --color-focused: var(--ion-color-light);
+  --color-selected: var(--ion-color-light);
+  border-radius: 50px;
+  height: 50px !important;
+}
+/* 
+  .h-scrollable{
+    display: inline-flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 8px 0;
+    overflow-y: hidden;
+    white-space: nowrap;
+  } */

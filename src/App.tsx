@@ -28,10 +28,19 @@ import '@ionic/react/css/display.css';
 
 /* import '@ionic/react/css/palettes/dark.always.css'; */
 /* import '@ionic/react/css/palettes/dark.class.css'; */
-import '@ionic/react/css/palettes/dark.system.css';
+/* import '@ionic/react/css/palettes/dark.system.css'; */
 
 /* Theme variables */
 import './theme/variables.css';
+//
+import './App.css'
+import Splash from './pages/Splash';
+import Intro from './pages/Intro';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
+import Tabs from './tabs/Tabs';
+import Search from './pages/Search';
+import LocationDetails from './pages/LocationDetails';
 
 setupIonicReact();
 
@@ -39,11 +48,17 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
+
+        <Route exact path="/splash" component={Splash} />
+        <Route exact path="/intro" component={Intro} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/location-details/:id" component={LocationDetails} />
+        
+        <Route path="/app" component={Tabs} />
+       
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/splash" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
